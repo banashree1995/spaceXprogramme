@@ -30,25 +30,30 @@ Succesful Land > It represents the status of the landing wheather it is succesfu
 ### Filters:
 
 Landing Page contains three types of filters to filter the data .
+
 1)Year Filter > Contains the launch years 
 2)Successful Launch Filter > contain the status of the launch
 3)Successful Land Filter > conatins the status of the landing
 
 By clicking on the Year filter it filters the data based on launch year , launch and land filter .
+
  Sample URL: 
  https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true&launch_year=2014
 
 By Clicking on the Launch filter it filters the data based on the launch status .
+
  Sample URL:
  https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true
+ 
 By Clicking on the Land FIlter it filters the data based on the launch status and land status.
+
  Sample URL:
  https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true
 
 NOTE:
 All filters are limited to only 100 records.
 
-# CODE Structure
+# Code Structure
 
 Project Consist of a main class/component App.js .
 On executtion of the app , App.js is called and the landing page and Filter functionality is integrated in this file.
