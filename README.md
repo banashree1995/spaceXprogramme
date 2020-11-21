@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 # Project Structure:
 
 The project is about SpaceX Programme and the details of the Space X Mission data .
-Landing Page consist of the 100 space X programes data.
+Landing Page consists of the 100 space X programes data.
 Each block represent a single spaceX programe.
 
 Details in a single programe :
