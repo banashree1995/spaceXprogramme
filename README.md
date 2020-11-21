@@ -59,7 +59,7 @@ All filters are limited to only 100 records.
 Project Consist of a main class(component) App.js .
 On executtion of the app , App.js is called and the landing page and Filter functionality is integrated in this file.
 index.css is used for styling of the app.
-For Mobile View, Table View and Desktop View resolutions css is handled using @media styles.
+For Mobile View, Tablet View and Desktop View resolutions css is handled using @media styles.
 
 
 
