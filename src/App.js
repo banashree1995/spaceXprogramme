@@ -65,7 +65,8 @@ class App extends Component {
        landSuccessFilter(event){
         let selected_land = (event.target.innerText).toLowerCase();
         this.setState({
-          land_sel_val:selected_land
+          land_sel_val:selected_land,
+          launch_sel_val:true
         })
         let landsuccessfilterurl='https://api.spaceXdata.com/v3/launches?limit=100&launch_success='+this.state.launch_sel_val+'&land_success='+ selected_land
         
