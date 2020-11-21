@@ -44,7 +44,7 @@ By Clicking on the Launch filter it filters the data based on the launch status 
 
  Sample URL:
  https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true
- 
+
 By Clicking on the Land FIlter it filters the data based on the launch status and land status.
 
  Sample URL:
@@ -55,9 +55,10 @@ All filters are limited to only 100 records.
 
 # Code Structure
 
-Project Consist of a main class/component App.js .
+Project Consist of a main class(component) App.js .
 On executtion of the app , App.js is called and the landing page and Filter functionality is integrated in this file.
 index.css is used for styling of the app.
+For Mobile View, Table View and Desktop View resolutions css is handled using @media styles.
 
 
 
