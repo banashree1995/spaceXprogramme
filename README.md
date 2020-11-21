@@ -25,8 +25,8 @@ Details in a single programe :
 Mission Name and Number > It represents the name of the mission and number . 
 Mission Ids > It represents missions ids.
 Launch Year > It represents the year of the mission launch.
-Successful Launch > It represents the status of the launch wheather it is succesful or failure.
-Succesful Land > It represents the status of the landing wheather it is succesful or failure.
+Successful Launch > It represents the status of the launch wheather it is successful or failure.
+Successful Land > It represents the status of the landing wheather it is successful or failure.
 
 ### Filters:
 
@@ -56,7 +56,7 @@ All filters are limited to only 100 records.
 
 # Code Structure:
 
-Project Consist of a main class(component) App.js .
+Project Consists of a main class(component) App.js .
 On executtion of the app , App.js is called and the landing page and Filter functionality is integrated in this file.
 index.css is used for styling of the app.
 For Mobile View, Tablet View and Desktop View resolutions css is handled using @media styles.
