@@ -14,57 +14,48 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+# Project Structure:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project is about SpaceX Programme and the details of the Space X Mission data .
+Landing Page consist of the 100 space X programes data.
+Each block represent a single spaceX programe.
 
-### `npm run build`
+Details in a single programe :
+Mission Name and Number > It represents the name of the mission and number . 
+Mission Ids > It represents missions ids.
+Launch Year > It represents the year of the mission launch.
+Successful Launch > It represents the status of the launch wheather it is succesful or failure.
+Succesful Land > It represents the status of the landing wheather it is succesful or failure.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Filters:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Landing Page contains three types of filters to filter the data .
+1)Year Filter > Contains the launch years 
+2)Successful Launch Filter > contain the status of the launch
+3)Successful Land Filter > conatins the status of the landing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+By clicking on the Year filter it filters the data based on launch year , launch and land filter .
+ Sample URL: 
+ https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true&launch_year=2014
 
-### `npm run eject`
+By Clicking on the Launch filter it filters the data based on the launch status .
+ Sample URL:
+ https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true
+By Clicking on the Land FIlter it filters the data based on the launch status and land status.
+ Sample URL:
+ https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+NOTE:
+All filters are limited to only 100 records.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# CODE Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Project Consist of a main class/component App.js .
+On executtion of the app , App.js is called and the landing page and Filter functionality is integrated in this file.
+index.css is used for styling of the app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
