@@ -53,7 +53,7 @@ By Clicking on the Land FIlter it filters the data based on the launch status an
 NOTE:
 All filters are limited to only 100 records.
 
-# Code Structure
+# Code Structure:
 
 Project Consist of a main class(component) App.js .
 On executtion of the app , App.js is called and the landing page and Filter functionality is integrated in this file.
