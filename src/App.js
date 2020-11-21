@@ -31,7 +31,6 @@ class App extends Component {
 
     
   yearFilter(event){
-   console.log(event.target.innerText)
    let selected_year = event.target.innerText;
    let yearfilterurl='https://api.spaceXdata.com/v3/launches?limit=100&launch_success='+this.state.launch_sel_val+'&land_success='+this.state.land_sel_val+'&launch_year='+ selected_year
    
@@ -60,13 +59,15 @@ class App extends Component {
            .catch(function (error) {
              console.log(error);
          })
+        this.setState({
+        launch_sel_val:true
+        });
        }
 
        landSuccessFilter(event){
         let selected_land = (event.target.innerText).toLowerCase();
         this.setState({
-          land_sel_val:selected_land,
-          launch_sel_val:true
+          land_sel_val:selected_land
         })
         let landsuccessfilterurl='https://api.spaceXdata.com/v3/launches?limit=100&launch_success='+this.state.launch_sel_val+'&land_success='+ selected_land
         
