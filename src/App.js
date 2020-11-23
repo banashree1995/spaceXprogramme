@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import nodataLogo from "./nodata.png"
 class App extends Component {
   constructor(props) {
     super(props)
@@ -9,7 +10,8 @@ class App extends Component {
       yearFiletr:['2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'],
       launch_sel_val:true,
       land_sel_val:true,
-      developer_name:'Banashree Panda'
+      developer_name:'Banashree Panda',
+      show_nodataimg:false
         
     }
   }
@@ -23,6 +25,15 @@ class App extends Component {
             this.setState({
               spacexData: response.data
             });
+       if(response.data.length == 0){
+              this.setState({
+                show_nodataimg: true
+              });
+            }else{
+              this.setState({
+                show_nodataimg: false
+              });
+            }
         })
         .catch(function (error) {
             console.log(error);
@@ -38,6 +49,15 @@ class App extends Component {
           this.setState({
             spacexData:response.data
           });
+           if(response.data.length == 0){
+              this.setState({
+                show_nodataimg: true
+              });
+            }else{
+              this.setState({
+                show_nodataimg: false
+              });
+            }
         })
         .catch(function (error) {
           console.log(error);
@@ -55,6 +75,15 @@ class App extends Component {
              this.setState({
                spacexData:response.data
              });
+              if(response.data.length == 0){
+              this.setState({
+                show_nodataimg: true
+              });
+            }else{
+              this.setState({
+                show_nodataimg: false
+              });
+            }
            })
            .catch(function (error) {
              console.log(error);
@@ -75,6 +104,15 @@ class App extends Component {
                this.setState({
                  spacexData:response.data
                });
+              if(response.data.length == 0){
+              this.setState({
+                show_nodataimg: true
+              });
+            }else{
+              this.setState({
+                show_nodataimg: false
+              });
+            }
              })
              .catch(function (error) {
                console.log(error);
@@ -122,6 +160,7 @@ class App extends Component {
 
            </div>
             <div className="col-md-10 mainContainer2">
+              {this.state.show_nodataimg && <img src={nodataLogo} className="nodataImg"></img>}
               <div className="row">
                
                 {this.state.spacexData.map((name, index) => (
