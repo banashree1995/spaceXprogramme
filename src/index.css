@@ -118,6 +118,10 @@ p{
    .labelContainer{
     margin-left: 28px
    }
+  .nodataImg{
+    width: 250px;
+    height: 250px;
+   }
 }
 
 /* Tablet View */
@@ -135,5 +139,9 @@ p{
     flex: 0 0 50% !important;
     max-width: 50% !important;
   }
+  .nodataImg{
+    width: 500px;
+    height: 500px;
+   }
 
 }
